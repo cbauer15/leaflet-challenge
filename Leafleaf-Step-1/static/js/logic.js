@@ -38,6 +38,7 @@ d3.json(queryUrl).then(function (data) {
     id: "dark-v10",
     accessToken: API_KEY
   });
+  
 
   // Define a baseMaps object to hold our base layers
   var baseMaps = {
@@ -50,7 +51,7 @@ d3.json(queryUrl).then(function (data) {
     Earthquakes: earthquakes
   };
 
-  // Create our map, giving it the streetmap and earthquakes layers to display on load
+  // Create our map, giving it the satalite map and earthquakes layers to display on load
   var myMap = L.map("mapid", {
     center: [20, 0],
     zoom: 2,
